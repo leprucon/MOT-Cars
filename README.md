@@ -8,4 +8,11 @@ A recursive bayesion filter, e.g. the Kalman filter, is used to estimate the tru
 
 Then, the hungarian algorithm is used to associate predicted locations with locations in the current frame, using a unique identifier (UID). It attempts to assign previously known objects to the new location. The cost matrix is computed with eulerian distance between predicted and current locations. Because the Hungarian algorithm may look for a complete matching, (particularly when the cost matrix is square,) the cost matrix and assignment calculations are modified to exclude cases where the distance is too large. If a matching cannot be found, the current location is assigned a new UID and Kalman filtering instance, and therefore treated as a new object.
 
+
+
+RESULT: (Compressed to 6mb, slight alteration to blue text thickness for visibility)
+https://github.com/leprucon/MOT-Cars/assets/29313866/cfc45f7e-58a4-4c53-b156-3d7bea9c19a0
+
+(Green squares represent measured locations. Blue numbers are the assigned UID.)
 Through the demo video, the solution is observed to be nearly perfect. Indeed, barring extreme cases, this solution correctly predicts trajectories and associates objects with surprising accuracy.
+
