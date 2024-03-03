@@ -11,7 +11,10 @@ Then, the hungarian algorithm is used to associate predicted locations with loca
 
 
 RESULT: (Compressed to 6mb, slight alteration to blue text thickness for visibility)
-https://github.com/leprucon/MOT-Cars/assets/29313866/cfc45f7e-58a4-4c53-b156-3d7bea9c19a0
+
+https://github.com/leprucon/MOT-Cars/assets/29313866/7b4a2622-6141-4638-bdcd-da78bf12ecd1
+
+
 
 (Green squares represent measured locations. Blue numbers are the assigned UID.)
 Through the demo video, the solution is observed to be nearly perfect. Indeed, barring extreme cases, this solution correctly predicts trajectories and associates objects with surprising accuracy.
