@@ -1,7 +1,7 @@
 # Multi-Object_Tracking_Cars
 
 The problem:
-Given a video of many moving objects, and (highly incomplete) information about object locations are at each frame, how can you associate objects with locations between frames? In other words, how can you know a measured location in one frame is the same object as a measured location in a later frame? 
+Given a video of many moving objects, and (highly incomplete) information about object locations at each frame, how can you associate objects with locations between frames? In other words, how can you know a measured location in one frame is the same object as a measured location in a later frame? 
 
 The solution:
 A recursive bayesion filter, e.g. the Kalman filter, is used to estimate the true trajectory of each car. The process noise and measurement covariance coefficients are determined partially experimentally, but influenced by analytical computations. This reduces the measurement noise as well as allowing the prediction of each object's location even when the object was unrecognized (causing lapses of location data for many frames).
